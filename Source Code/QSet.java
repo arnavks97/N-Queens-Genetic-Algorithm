@@ -65,7 +65,7 @@ public class QSet {
 				if(frequency > 1)
 					sum += ((frequency-1)*(frequency))/2;
 				
-				diagonals = delete(diagonals[i], diagonals[i][0], diagonals[i].length - frequency);
+				diagonals[i] = delete(diagonals[i], diagonals[i][0], diagonals[i].length - frequency);
 			}
 		}
 		
